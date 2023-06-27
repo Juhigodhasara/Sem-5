@@ -1,0 +1,8 @@
+.hover li ul{
+    display: none;
+}
+.hover:hover li ul{
+    display: block;
+}
+
+.hover li ul:hover

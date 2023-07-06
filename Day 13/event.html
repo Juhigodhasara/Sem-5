@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#p").click(function(){
+            $(this).hide();
+          });
+        $("#e1").dblclick(function(){
+            $(this).hide();
+          });
+          $("#p1").css("color", "red")
+          .slideUp(2000)
+          .slideDown(2000);
+        });
+    </script>
+</head>
+
+<body>
+   
+    <p id="p">This is hide action on click event.</p>
+    <p id="e1">Double click me and i will disappear.</p>
+    <h4>Below is chaining effect.</h4>
+    <p id="p1">
+        <img src="image.jpg" alt="" style="height: 250px;">
+    </p>
+</body>
+
+</html>

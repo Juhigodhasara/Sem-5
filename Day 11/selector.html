@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $("#u1").click(function(){
+                $(this).css("color", "red");
+            });
+            $("p").dblclick(function (){
+                $(this).slideUp(2000).slideDown(2000);
+            });
+            $(".hov").hover(function (){
+                $(this).css("background-color", "green");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2 id="u1">This is id selector, click me to change colour.</h2>
+    <h2><p style="color: blue;">This is P tag, double click me to scroll me up and down</p></h2>
+    <h2 class="hov" style="height: 200px; width: 400px; background-color: aqua;">This is the class selector, hover to change the colour</h2>
+    
+</body>
+</html>
